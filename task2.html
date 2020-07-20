@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2</title>
+  <style>
+  #container{
+  max-width: 190px;
+  margin: auto;
+  
+  padding: 50px;
+  background-color: rgb(196, 229, 188);
+  border: 2px solid black;
+  
+  
+}
+  #name{
+    font-weight: bold;
+  }
+ #desc{
+   font-weight: bold;
+ }
+ #Assign{
+   font-weight:bold;
+ }
+ #due{
+   font-weight: bold;
+ }
+#status{
+  font-weight: bold;
+
+}
+
+  </style>
+</head>
+<body>
+  <div id = "container">
+    <h4>Please fill up the Form.</h4>
+
+    <div class="form-group">
+      <div class="form-group">
+        <label id="name"for="usr">Name:</label>
+        <form>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+        </form>
+      </div>
+
+      
+    <div>
+      <label id="desc" for="text area"> Description:</label>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1"></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    
+      <div>
+        <label id="Assign"for="text area"> Assigned To:</label>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+       
+      <div>
+        <span id="due">Due Date:</span>
+        <br>
+    
+        <input type="date" id="myDate" value="2020-20-07">
+      </div>
+    
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label id="status" class="input-group-text" for="inputGroupSelect01">Status:</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">To do</option>
+          <option value="2">In progress</option>
+          <option value="3">Review</option>
+          <option value="3">Done</option>
+        </select>
+      </div>
+      
+
+      
+     </div>
+    </div>
+  </div>  
+</body>
+</html>
